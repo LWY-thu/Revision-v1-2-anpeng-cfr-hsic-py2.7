@@ -1,0 +1,6 @@
+Training with hyperparameters: alpha=0.0001, lambda=0
+Training data: ./Syn_8_8_8_2_10000/syn_conty/rp30.train.npz
+Test data:     ./Syn_8_8_8_2_10000/syn_conty/rn30.test.npz ./Syn_8_8_8_2_10000/syn_conty/rp30.test.npz
+Loaded data with shape [9000,26]
+Defining graph...
+

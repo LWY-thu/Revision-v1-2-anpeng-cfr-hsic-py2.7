@@ -16,44 +16,44 @@ os.environ['CUDA_VISIBLE_DEVICES'] = '-1' # 禁用GPU
 
 ''' Define parameter flags '''
 FLAGS = tf.app.flags.FLAGS
-tf.app.flags.DEFINE_string('loss', 'l2', """Which loss function to use (l1/l2/log)""")
-tf.app.flags.DEFINE_integer('n_in', 2, """Number of representation layers. """)
-tf.app.flags.DEFINE_integer('n_out', 2, """Number of regression layers. """)
-tf.app.flags.DEFINE_float('p_alpha', 1e-4, """Imbalance regularization param. """)
-tf.app.flags.DEFINE_float('p_lambda', 0.0, """Weight decay regularization parameter. """)
+tf.app.flags.DEFINE_string('loss', 'log', """Which loss function to use (l1/l2/log)""")
+tf.app.flags.DEFINE_integer('n_in', 3, """Number of representation layers. """)
+tf.app.flags.DEFINE_integer('n_out', 3, """Number of regression layers. """)
+tf.app.flags.DEFINE_float('p_alpha', 0.05, """Imbalance regularization param. """)
+tf.app.flags.DEFINE_float('p_lambda', 0.0001, """Weight decay regularization parameter. """)
 tf.app.flags.DEFINE_float('p_lambda1', 0.0, """Weight decay regularization parameter. """)
-tf.app.flags.DEFINE_float('p_gamma1', 1., """coef of pred_last_hsic. """)
-tf.app.flags.DEFINE_float('p_gamma2', 0.5, """coef of rep_last_hsic. """)
-tf.app.flags.DEFINE_float('p_gamma3', 0.5, """coef of else_hsic. """)
-tf.app.flags.DEFINE_integer('rep_weight_decay', 1, """Whether to penalize representation layers with weight decay""")
-tf.app.flags.DEFINE_float('dropout_in', 0.9, """Input layers dropout keep rate. """)
-tf.app.flags.DEFINE_float('dropout_out', 0.9, """Output layers dropout keep rate. """)
-tf.app.flags.DEFINE_string('nonlin', 'relu', """Kind of non-linearity. Default relu. """)
-tf.app.flags.DEFINE_float('lrate', 0.05, """Learning rate. """)
-tf.app.flags.DEFINE_float('decay', 0.5, """RMSProp decay. """)
-tf.app.flags.DEFINE_integer('batch_size', 100, """Batch size. """)
-tf.app.flags.DEFINE_integer('dim_in', 100, """Pre-representation layer dimensions. """)
-tf.app.flags.DEFINE_integer('dim_out', 100, """Post-representation layer dimensions. """)
-tf.app.flags.DEFINE_integer('batch_norm', 0, """Whether to use batch normalization. """)
+tf.app.flags.DEFINE_float('p_gamma1', 0, """coef of pred_last_hsic. """)
+tf.app.flags.DEFINE_float('p_gamma2', 0, """coef of rep_last_hsic. """)
+tf.app.flags.DEFINE_float('p_gamma3', 0, """coef of else_hsic. """)
+tf.app.flags.DEFINE_integer('rep_weight_decay', 0, """Whether to penalize representation layers with weight decay""")
+tf.app.flags.DEFINE_float('dropout_in', 1.0, """Input layers dropout keep rate. """)
+tf.app.flags.DEFINE_float('dropout_out', 1.0, """Output layers dropout keep rate. """)
+tf.app.flags.DEFINE_string('nonlin', 'elu', """Kind of non-linearity. Default relu. """)
+tf.app.flags.DEFINE_float('lrate', 0.0005, """Learning rate. """)
+tf.app.flags.DEFINE_float('decay', 0.3, """RMSProp decay. """)
+tf.app.flags.DEFINE_integer('batch_size', 256, """Batch size. """)
+tf.app.flags.DEFINE_integer('dim_in', 128, """Pre-representation layer dimensions. """)
+tf.app.flags.DEFINE_integer('dim_out', 54, """Post-representation layer dimensions. """)
+tf.app.flags.DEFINE_integer('batch_norm', 1, """Whether to use batch normalization. """)
 tf.app.flags.DEFINE_string('normalization', 'none', """How to normalize representation (after batch norm). none/bn_fixed/divide/project """)
 tf.app.flags.DEFINE_float('rbf_sigma', 0.1, """RBF MMD sigma """)
-tf.app.flags.DEFINE_integer('n_experiments', 1, """Number of experiments. """)
-tf.app.flags.DEFINE_integer('iterations', 2000, """Number of iterations. """)
+tf.app.flags.DEFINE_integer('n_experiments', 10, """Number of experiments. """)
+tf.app.flags.DEFINE_integer('iterations', 5000, """Number of iterations. """)
 tf.app.flags.DEFINE_float('weight_init', 0.01, """Weight initialization scale. """)
 tf.app.flags.DEFINE_float('lrate_decay', 0.95, """Decay of learning rate every 100 iterations """)
-tf.app.flags.DEFINE_integer('wass_iterations', 20, """Number of iterations in Wasserstein computation. """)
-tf.app.flags.DEFINE_float('wass_lambda', 1, """Wasserstein lambda. """)
-tf.app.flags.DEFINE_integer('wass_bpt', 0, """Backprop through T matrix? """)
+tf.app.flags.DEFINE_integer('wass_iterations', 10, """Number of iterations in Wasserstein computation. """)
+tf.app.flags.DEFINE_float('wass_lambda', 10.0, """Wasserstein lambda. """)
+tf.app.flags.DEFINE_integer('wass_bpt', 1, """Backprop through T matrix? """)
 tf.app.flags.DEFINE_integer('varsel', 0, """Whether the first layer performs variable selection. """)
 # tf.app.flags.DEFINE_string('outdir', '../results/tfnet_topic/alpha_sweep_22_d100/', """Output directory. """)
 tf.app.flags.DEFINE_string('outdir', './results/', """Output directory. """)
-tf.app.flags.DEFINE_string('datadir', '../data/topic/csv/', """Data directory. """)
-tf.app.flags.DEFINE_string('dataform', 'topic_dmean_seed_%d.csv', """Training data filename form. """)
-tf.app.flags.DEFINE_string('data_test', '', """Test data filename form. """)
+tf.app.flags.DEFINE_string('datadir', './Syn_8_8_8_2_10000/syn_conty/', """Data directory. """)
+tf.app.flags.DEFINE_string('dataform', 'rp30.train.npz', """Training data filename form. """)
+tf.app.flags.DEFINE_string('data_test', 'rn30.test.npz', """Test data filename form. """)
 tf.app.flags.DEFINE_integer('sparse', 0, """Whether data is stored in sparse format (.x, .y). """)
-tf.app.flags.DEFINE_integer('seed', 1, """Seed. """)
+tf.app.flags.DEFINE_integer('seed', 888, """Seed. """)
 tf.app.flags.DEFINE_integer('repetitions', 1, """Repetitions with different seed.""")
-tf.app.flags.DEFINE_integer('use_p_correction', 1, """Whether to use population size p(t) in mmd/disc/wass.""")
+tf.app.flags.DEFINE_integer('use_p_correction', 0, """Whether to use population size p(t) in mmd/disc/wass.""")
 tf.app.flags.DEFINE_string('optimizer', 'RMSProp', """Which optimizer to use. (RMSProp/Adagrad/GradientDescent/Adam)""")
 tf.app.flags.DEFINE_string('imb_fun', 'mmd_lin', """Which imbalance penalty to use (mmd_lin/mmd_rbf/mmd2_lin/mmd2_rbf/lindisc/wass). """)
 tf.app.flags.DEFINE_integer('output_csv',0,"""Whether to save a CSV file with the results""")
@@ -61,8 +61,8 @@ tf.app.flags.DEFINE_integer('output_delay', 100, """Number of iterations between
 tf.app.flags.DEFINE_integer('pred_output_delay', -1, """Number of iterations between prediction outputs. (-1 gives no intermediate output). """)
 tf.app.flags.DEFINE_integer('debug', 0, """Debug mode. """)
 tf.app.flags.DEFINE_integer('save_rep', 0, """Save representations after training. """)
-tf.app.flags.DEFINE_float('val_part', 0, """Validation part. """)
-tf.app.flags.DEFINE_boolean('split_output', 0, """Whether to split output layers between treated and control. """)
+tf.app.flags.DEFINE_float('val_part', 0.3, """Validation part. """)
+tf.app.flags.DEFINE_boolean('split_output', 1, """Whether to split output layers between treated and control. """)
 tf.app.flags.DEFINE_boolean('reweight_sample', 1, """Whether to reweight sample for prediction loss with average treatment probability. """)
 
 if FLAGS.sparse:
@@ -73,6 +73,10 @@ NUM_ITERATIONS_PER_DECAY = 100
 __DEBUG__ = False
 if FLAGS.debug:
     __DEBUG__ = True
+
+def pehe(ypred1, ypred0, mu1, mu0):
+    return np.sqrt(np.mean(np.square((mu1 - mu0) - (ypred1 - ypred0))))
+
 
 def train(CFR, sess, train_first, train_second, D, I_valid, D_test, logfile, i_exp):
     """ Trains a CFR model on supplied data """
@@ -177,12 +181,35 @@ def train(CFR, sess, train_first, train_second, D, I_valid, D_test, logfile, i_e
             if FLAGS.val_part > 0:
                 valid_obj, valid_f_error, valid_imb = sess.run([CFR.tot_loss, CFR.pred_loss, CFR.imb_dist], feed_dict=dict_valid)
             
-            # ''' 测试集结果 '''
-            # test_obj, test_f_error, test_imb = sess.run([CFR.tot_loss, CFR.pred_loss, CFR.imb_dist], feed_dict=dict_test)
+            ''' 测试集结果 '''
+            dt_i = 0
+            # test_obj, test_f_error, test_imb = sess.run([CFR.tot_loss, CFR.pred_loss, CFR.imb_dist], feed_dict=dict_test[0])
+
+            y_pred_f = sess.run(CFR.output, feed_dict={CFR.I: I, CFR.x: D['x'], \
+                            CFR.t: D['t'], CFR.do_in: 1.0, CFR.do_out: 1.0})
+            y_pred_cf = sess.run(CFR.output, feed_dict={CFR.I: I, CFR.x: D['x'], \
+                            CFR.t: 1-D['t'], CFR.do_in: 1.0, CFR.do_out: 1.0})
+            y_pred_mu1 = sess.run(CFR.output, feed_dict={CFR.I: I, CFR.x: D['x'], \
+                            CFR.t: 1-D['t']+D['t'], CFR.do_in: 1.0, CFR.do_out: 1.0})
+            y_pred_mu0 = sess.run(CFR.output, feed_dict={CFR.I: I, CFR.x: D['x'], \
+                            CFR.t: D['t']-D['t'], CFR.do_in: 1.0, CFR.do_out: 1.0})
+            ate_train = np.mean(y_pred_mu1) - np.mean(y_pred_mu0)
+            pehe_train = pehe(ypred1=y_pred_f, ypred0=y_pred_cf, mu1=y_pred_mu1, mu0=y_pred_mu0)
+
+            y_pred_f_test = sess.run(CFR.output, feed_dict={CFR.I: I_test, CFR.x: D_test[dt_i]['x'], \
+                                            CFR.t: D_test[dt_i]['t'], CFR.do_in: 1.0, CFR.do_out: 1.0})
+            y_pred_cf_test = sess.run(CFR.output, feed_dict={CFR.I: I_test, CFR.x: D_test[dt_i]['x'], \
+                                    CFR.t: 1-D_test[dt_i]['t'], CFR.do_in: 1.0, CFR.do_out: 1.0})
+            y_pred_mu1_test = sess.run(CFR.output, feed_dict={CFR.I: I_test, CFR.x: D_test[dt_i]['x'], \
+                                            CFR.t: 1-D_test[dt_i]['t']+D_test[dt_i]['t'], CFR.do_in: 1.0, CFR.do_out: 1.0})
+            y_pred_mu0_test = sess.run(CFR.output, feed_dict={CFR.I: I_test, CFR.x: D_test[dt_i]['x'], \
+                                    CFR.t: D_test[dt_i]['t']-D_test[dt_i]['t'], CFR.do_in: 1.0, CFR.do_out: 1.0})
+            ate_ood = np.mean(y_pred_mu1_test) - np.mean(y_pred_mu0_test)
+            pehe_ood = pehe(ypred1=y_pred_f_test, ypred0=y_pred_cf_test, mu1=y_pred_mu1_test, mu0=y_pred_mu0_test)
 
             losses.append([obj_loss, f_error, cf_error, imb_err, valid_f_error, valid_imb, valid_obj])
-            loss_str = str(i) + '\tObj: %.3f,\tF: %.3f,\tCf: %.3f,\tImb: %.2g,\tVal: %.3f,\tValImb: %.2g,\tValObj: %.2f' \
-                        % (obj_loss, f_error, cf_error, imb_err, valid_f_error, valid_imb, valid_obj)
+            loss_str = str(i) + '\tObj: %.4f,\tF: %.4f,\tCf: %.3f,\tImb: %.2g,\tVal: %.3f,\tValImb: %.2g,\tValObj: %.2f\tate_train: %.4f,\tpehe_train: %.4f\tate_ood: %.4f,\tpehe_ood: %.4f' \
+                        % (obj_loss, f_error, cf_error, imb_err, valid_f_error, valid_imb, valid_obj,ate_train, pehe_train, ate_ood,pehe_ood)
 
             # loss_str = str(i) + '\tObj: %.3f,\tF: %.3f,\tCf: %.3f,\tImb: %.2g,\tVal: %.3f,\tValImb: %.2g,\tValObj: %.2f,\tTest: %.3f,\tTestImb: %.2g,\tTestObj: %.2f' \
             #             % (obj_loss, f_error, cf_error, imb_err, valid_f_error, valid_imb, valid_obj, test_f_error, test_imb, test_obj)
@@ -262,7 +289,6 @@ def run(outdir):
     f = open(logfile,'w')
     f.close()
     dataform = FLAGS.datadir + FLAGS.dataform
-    dataform = './Syn_8_8_8_2_10000/syn_conty/rp30.train.npz'
 
     # net_dir = outdir+'weight'
     # os.mkdir(net_dir)

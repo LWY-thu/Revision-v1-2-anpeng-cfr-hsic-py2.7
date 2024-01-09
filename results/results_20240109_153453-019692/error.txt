@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "net_train.py", line 521, in main
+    run(outdir)
+  File "net_train.py", line 460, in run
+    train(CFR, sess, train_first, train_second, D_exp, I_valid, D_exp_test_list, logfile, i_exp)
+  File "net_train.py", line 197, in train
+    pehe = pehe(ypred1=y_pred_f, ypred0=y_pred_cf, mu1=y_pred_mu1, mu0=y_pred_mu0)
+UnboundLocalError: local variable 'pehe' referenced before assignment

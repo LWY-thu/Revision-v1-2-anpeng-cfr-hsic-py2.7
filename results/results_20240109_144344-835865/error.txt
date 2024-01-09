@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "net_train.py", line 495, in main
+    run(outdir)
+  File "net_train.py", line 302, in run
+    log(logfile, 'Test data:     ' + ' '.join(datapath_test))
+UnboundLocalError: local variable 'datapath_test' referenced before assignment

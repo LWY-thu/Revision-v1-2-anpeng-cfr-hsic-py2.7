@@ -1,0 +1,30 @@
+Training with hyperparameters: alpha=0.0001, lambda=0
+Training data: ./Syn_8_8_8_2_10000/syn_conty/rp30.train.npz
+Test data:     ./Syn_8_8_8_2_10000/syn_conty/rn30.test.npz ./Syn_8_8_8_2_10000/syn_conty/rp30.test.npz
+Loaded data with shape [9000,26]
+Defining graph...
+
+Training on experiment 1/1...
+0	Obj: 0.467,	F: 0.682,	Cf: 0.595,	Imb: 1.6e-08,	Val: nan,	ValImb: nan,	ValObj: nan
+100	Obj: 0.078,	F: 0.289,	Cf: 0.321,	Imb: 4.8e-15,	Val: nan,	ValImb: nan,	ValObj: nan
+200	Obj: 0.071,	F: 0.288,	Cf: 0.314,	Imb: 4.1e-15,	Val: nan,	ValImb: nan,	ValObj: nan
+300	Obj: 0.066,	F: 0.289,	Cf: 0.297,	Imb: 3.6e-15,	Val: nan,	ValImb: nan,	ValObj: nan
+400	Obj: 0.061,	F: 0.289,	Cf: 0.305,	Imb: 3.3e-15,	Val: nan,	ValImb: nan,	ValObj: nan
+500	Obj: 0.054,	F: 0.287,	Cf: 0.304,	Imb: 2.7e-15,	Val: nan,	ValImb: nan,	ValObj: nan
+600	Obj: 0.051,	F: 0.290,	Cf: 0.317,	Imb: 2.1e-15,	Val: nan,	ValImb: nan,	ValObj: nan
+700	Obj: 0.046,	F: 0.289,	Cf: 0.319,	Imb: 1.7e-15,	Val: nan,	ValImb: nan,	ValObj: nan
+800	Obj: 0.041,	F: 0.290,	Cf: 0.324,	Imb: 1.4e-15,	Val: nan,	ValImb: nan,	ValObj: nan
+900	Obj: 0.037,	F: 0.289,	Cf: 0.293,	Imb: 1.1e-15,	Val: nan,	ValImb: nan,	ValObj: nan
+1000	Obj: 0.032,	F: 0.287,	Cf: 0.303,	Imb: 8.6e-16,	Val: nan,	ValImb: nan,	ValObj: nan
+1100	Obj: 0.029,	F: 0.288,	Cf: 0.311,	Imb: 5.7e-16,	Val: nan,	ValImb: nan,	ValObj: nan
+1200	Obj: 0.025,	F: 0.288,	Cf: 0.299,	Imb: 4.3e-16,	Val: nan,	ValImb: nan,	ValObj: nan
+1300	Obj: 0.023,	F: 0.290,	Cf: 0.306,	Imb: 3.5e-16,	Val: nan,	ValImb: nan,	ValObj: nan
+1400	Obj: 0.020,	F: 0.289,	Cf: 0.293,	Imb: 2.4e-16,	Val: nan,	ValImb: nan,	ValObj: nan
+1500	Obj: 0.017,	F: 0.288,	Cf: 0.301,	Imb: 1.5e-16,	Val: nan,	ValImb: nan,	ValObj: nan
+1600	Obj: 0.015,	F: 0.288,	Cf: 0.308,	Imb: 1.3e-16,	Val: nan,	ValImb: nan,	ValObj: nan
+1700	Obj: 0.013,	F: 0.287,	Cf: 0.309,	Imb: 1e-16,	Val: nan,	ValImb: nan,	ValObj: nan
+1800	Obj: 0.011,	F: 0.287,	Cf: 0.306,	Imb: 8.9e-17,	Val: nan,	ValImb: nan,	ValObj: nan
+1900	Obj: 0.009,	F: 0.288,	Cf: 0.301,	Imb: 1.1e-16,	Val: nan,	ValImb: nan,	ValObj: nan
+1999	Obj: 0.008,	F: 0.288,	Cf: 0.315,	Imb: 1e-16,	Val: nan,	ValImb: nan,	ValObj: nan
+Saving result to ./results//results_20240109_145715-919561/...
+

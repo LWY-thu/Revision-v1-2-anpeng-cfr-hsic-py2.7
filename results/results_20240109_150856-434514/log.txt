@@ -1,0 +1,30 @@
+Training with hyperparameters: alpha=0.0001, lambda=0
+Training data: ./Syn_8_8_8_2_10000/syn_conty/rp30.train.npz
+Test data:     ./Syn_8_8_8_2_10000/syn_conty/rn30.test.npz ./Syn_8_8_8_2_10000/syn_conty/rp30.test.npz
+Loaded data with shape [9000,26]
+Defining graph...
+
+Training on experiment 1/1...
+0	Obj: 0.467,	F: 0.682,	Cf: 0.595,	Imb: 1.6e-08,	Val: nan,	ValImb: nan,	ValObj: nan,	Test: 0.684,	TestImb: 1.3e-08,	TestObj: 0.47
+100	Obj: 0.235,	F: 0.262,	Cf: 0.315,	Imb: 0.73,	Val: nan,	ValImb: nan,	ValObj: nan,	Test: 0.326,	TestImb: 0.83,	TestObj: 0.44
+200	Obj: 0.276,	F: 0.197,	Cf: 0.240,	Imb: 1.4,	Val: nan,	ValImb: nan,	ValObj: nan,	Test: 0.572,	TestImb: 2.8,	TestObj: 0.80
+300	Obj: 0.237,	F: 0.232,	Cf: 0.272,	Imb: 1.1,	Val: nan,	ValImb: nan,	ValObj: nan,	Test: 0.503,	TestImb: 49,	TestObj: 0.51
+400	Obj: 0.328,	F: 0.182,	Cf: 0.230,	Imb: 4.2,	Val: nan,	ValImb: nan,	ValObj: nan,	Test: 0.632,	TestImb: 59,	TestObj: 1.55
+500	Obj: 0.329,	F: 0.230,	Cf: 0.220,	Imb: 3.2,	Val: nan,	ValImb: nan,	ValObj: nan,	Test: 1.374,	TestImb: 80,	TestObj: 2.42
+600	Obj: 0.489,	F: 0.160,	Cf: 0.200,	Imb: 8.9,	Val: nan,	ValImb: nan,	ValObj: nan,	Test: 0.738,	TestImb: 16,	TestObj: 1.30
+700	Obj: 1.281,	F: 0.189,	Cf: 0.233,	Imb: 10,	Val: nan,	ValImb: nan,	ValObj: nan,	Test: 1.079,	TestImb: 4.1,	TestObj: 1.89
+800	Obj: 0.391,	F: 0.163,	Cf: 0.229,	Imb: 7.9,	Val: nan,	ValImb: nan,	ValObj: nan,	Test: 1.278,	TestImb: 19,	TestObj: 2.46
+900	Obj: 0.449,	F: 0.192,	Cf: 0.197,	Imb: 13,	Val: nan,	ValImb: nan,	ValObj: nan,	Test: 0.829,	TestImb: 6.4,	TestObj: 1.80
+1000	Obj: 0.596,	F: 0.172,	Cf: 0.212,	Imb: 9.7,	Val: nan,	ValImb: nan,	ValObj: nan,	Test: 0.557,	TestImb: 30,	TestObj: 0.70
+1100	Obj: 0.933,	F: 0.164,	Cf: 0.233,	Imb: 7.6,	Val: nan,	ValImb: nan,	ValObj: nan,	Test: 0.637,	TestImb: 11,	TestObj: 1.30
+1200	Obj: 0.579,	F: 0.174,	Cf: 0.211,	Imb: 9.3,	Val: nan,	ValImb: nan,	ValObj: nan,	Test: 0.714,	TestImb: 37,	TestObj: 1.40
+1300	Obj: 0.508,	F: 0.152,	Cf: 0.198,	Imb: 12,	Val: nan,	ValImb: nan,	ValObj: nan,	Test: 1.075,	TestImb: 82,	TestObj: 2.48
+1400	Obj: 0.279,	F: 0.139,	Cf: 0.195,	Imb: 15,	Val: nan,	ValImb: nan,	ValObj: nan,	Test: 1.069,	TestImb: 87,	TestObj: 1.70
+1500	Obj: 0.506,	F: 0.180,	Cf: 0.216,	Imb: 9.4,	Val: nan,	ValImb: nan,	ValObj: nan,	Test: 1.071,	TestImb: 1.1e+02,	TestObj: 2.09
+1600	Obj: 0.508,	F: 0.170,	Cf: 0.205,	Imb: 14,	Val: nan,	ValImb: nan,	ValObj: nan,	Test: 0.581,	TestImb: 1.4e+02,	TestObj: 0.72
+1700	Obj: 0.904,	F: 0.153,	Cf: 0.203,	Imb: 15,	Val: nan,	ValImb: nan,	ValObj: nan,	Test: 0.921,	TestImb: 1.1e+02,	TestObj: 2.06
+1800	Obj: 0.360,	F: 0.157,	Cf: 0.216,	Imb: 13,	Val: nan,	ValImb: nan,	ValObj: nan,	Test: 0.538,	TestImb: 93,	TestObj: 0.70
+1900	Obj: 1.210,	F: 0.141,	Cf: 0.191,	Imb: 16,	Val: nan,	ValImb: nan,	ValObj: nan,	Test: 0.801,	TestImb: 66,	TestObj: 2.01
+1999	Obj: 0.381,	F: 0.156,	Cf: 0.218,	Imb: 16,	Val: nan,	ValImb: nan,	ValObj: nan,	Test: 0.698,	TestImb: 45,	TestObj: 2.02
+Saving result to ./results//results_20240109_150856-434514/...
+

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "net_train.py", line 494, in main
+    run(outdir)
+  File "net_train.py", line 433, in run
+    train(CFR, sess, train_first, train_second, D_exp, I_valid, D_exp_test_list, logfile, i_exp)
+  File "net_train.py", line 188, in train
+    % (obj_loss, f_error, cf_error, imb_err, valid_f_error, valid_imb, valid_obj, test_f_error, test_imb, test_obj)
+NameError: name 'test_f_error' is not defined

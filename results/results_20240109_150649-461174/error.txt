@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "net_train.py", line 494, in main
+    run(outdir)
+  File "net_train.py", line 433, in run
+    train(CFR, sess, train_first, train_second, D_exp, I_valid, D_exp_test_list, logfile, i_exp)
+  File "net_train.py", line 181, in train
+    test_obj, test_f_error, test_imb = sess.run([CFR.tot_loss, CFR.pred_loss, CFR.imb_dist], feed_dict=dict_test)
+  File "/home/wyliu/yes/envs/tf-torch/lib/python3.6/site-packages/tensorflow_core/python/client/session.py", line 956, in run
+    run_metadata_ptr)
+  File "/home/wyliu/yes/envs/tf-torch/lib/python3.6/site-packages/tensorflow_core/python/client/session.py", line 1115, in _run
+    feed_dict = nest.flatten_dict_items(feed_dict)
+  File "/home/wyliu/yes/envs/tf-torch/lib/python3.6/site-packages/tensorflow_core/python/util/nest.py", line 360, in flatten_dict_items
+    raise TypeError("input must be a dictionary")
+TypeError: input must be a dictionary

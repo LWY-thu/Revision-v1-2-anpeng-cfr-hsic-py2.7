@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "net_train.py", line 494, in main
+    run(outdir)
+  File "net_train.py", line 433, in run
+    train(CFR, sess, train_first, train_second, D_exp, I_valid, D_exp_test_list, logfile, i_exp)
+  File "net_train.py", line 137, in train
+    I_batch = random.sample(range(0, n_train), batch_size)
+  File "/home/wyliu/yes/envs/tf-torch/lib/python3.6/random.py", line 320, in sample
+    raise ValueError("Sample larger than population or is negative")
+ValueError: Sample larger than population or is negative

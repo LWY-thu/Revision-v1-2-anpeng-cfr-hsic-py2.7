@@ -1,0 +1,98 @@
+Training with hyperparameters: alpha=0.0001, lambda=0
+Training data: ./Syn_8_8_8_2_10000/syn_conty/rp25.train.npz
+Test data:     ./Syn_8_8_8_2_10000/syn_conty/rn30.test.npz
+Loaded data with shape [9000,26]
+Defining graph...
+
+Training on experiment 1/10...
+0	Obj: 0.5140,	F: 0.7160,	Cf: 0.619,	Imb: 1.9e-08,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.0082,	pehe_train: 0.0107	ate_ood: 0.0082,	pehe_ood: 0.0108
+100	Obj: 0.0828,	F: 0.2893,	Cf: 0.315,	Imb: 4.6e-17,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.9132,	pehe_train: 1.1951	ate_ood: 0.9132,	pehe_ood: 1.2047
+200	Obj: 0.0813,	F: 0.2892,	Cf: 0.306,	Imb: 4.6e-17,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8820,	pehe_train: 1.1542	ate_ood: 0.8820,	pehe_ood: 1.1634
+300	Obj: 0.0800,	F: 0.2889,	Cf: 0.309,	Imb: 4.5e-17,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8899,	pehe_train: 1.1645	ate_ood: 0.8899,	pehe_ood: 1.1738
+400	Obj: 0.0789,	F: 0.2891,	Cf: 0.305,	Imb: 4.5e-17,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8432,	pehe_train: 1.1034	ate_ood: 0.8432,	pehe_ood: 1.1122
+500	Obj: 0.0787,	F: 0.2906,	Cf: 0.315,	Imb: 4.4e-17,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.9270,	pehe_train: 1.2131	ate_ood: 0.9270,	pehe_ood: 1.2228
+600	Obj: 0.0784,	F: 0.2920,	Cf: 0.316,	Imb: 4.3e-17,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.9379,	pehe_train: 1.2273	ate_ood: 0.9379,	pehe_ood: 1.2372
+700	Obj: 0.0782,	F: 0.2934,	Cf: 0.316,	Imb: 4.3e-17,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.9450,	pehe_train: 1.2366	ate_ood: 0.9450,	pehe_ood: 1.2465
+800	Obj: 0.0788,	F: 0.2964,	Cf: 0.323,	Imb: 4.3e-17,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.9734,	pehe_train: 1.2737	ate_ood: 0.9734,	pehe_ood: 1.2839
+900	Obj: 0.0739,	F: 0.2887,	Cf: 0.306,	Imb: 4.2e-17,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8712,	pehe_train: 1.1401	ate_ood: 0.8712,	pehe_ood: 1.1493
+1000	Obj: 0.0747,	F: 0.2919,	Cf: 0.309,	Imb: 4.2e-17,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8209,	pehe_train: 1.0742	ate_ood: 0.8209,	pehe_ood: 1.0828
+1100	Obj: 0.0727,	F: 0.2895,	Cf: 0.307,	Imb: 4.1e-17,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8429,	pehe_train: 1.1030	ate_ood: 0.8429,	pehe_ood: 1.1119
+1200	Obj: 0.0718,	F: 0.2891,	Cf: 0.305,	Imb: 4.1e-17,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8442,	pehe_train: 1.1047	ate_ood: 0.8442,	pehe_ood: 1.1136
+1300	Obj: 0.0709,	F: 0.2887,	Cf: 0.309,	Imb: 4.1e-17,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8630,	pehe_train: 1.1293	ate_ood: 0.8630,	pehe_ood: 1.1384
+1400	Obj: 0.0701,	F: 0.2886,	Cf: 0.307,	Imb: 4.1e-17,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8688,	pehe_train: 1.1369	ate_ood: 0.8688,	pehe_ood: 1.1460
+1500	Obj: 0.0695,	F: 0.2886,	Cf: 0.311,	Imb: 4.1e-17,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8764,	pehe_train: 1.1468	ate_ood: 0.8764,	pehe_ood: 1.1560
+1600	Obj: 0.0696,	F: 0.2901,	Cf: 0.312,	Imb: 4.1e-17,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8495,	pehe_train: 1.1117	ate_ood: 0.8495,	pehe_ood: 1.1206
+1700	Obj: 0.0684,	F: 0.2887,	Cf: 0.312,	Imb: 4e-17,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8939,	pehe_train: 1.1698	ate_ood: 0.8939,	pehe_ood: 1.1792
+1800	Obj: 0.0685,	F: 0.2900,	Cf: 0.306,	Imb: 4e-17,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8326,	pehe_train: 1.0896	ate_ood: 0.8326,	pehe_ood: 1.0983
+1900	Obj: 0.0681,	F: 0.2902,	Cf: 0.312,	Imb: 3.9e-17,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8498,	pehe_train: 1.1121	ate_ood: 0.8498,	pehe_ood: 1.1210
+2000	Obj: 0.0672,	F: 0.2895,	Cf: 0.312,	Imb: 3.9e-17,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.9076,	pehe_train: 1.1876	ate_ood: 0.9076,	pehe_ood: 1.1971
+2100	Obj: 0.0664,	F: 0.2888,	Cf: 0.315,	Imb: 3.8e-17,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8955,	pehe_train: 1.1719	ate_ood: 0.8955,	pehe_ood: 1.1812
+2200	Obj: 0.0661,	F: 0.2889,	Cf: 0.315,	Imb: 3.8e-17,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.9052,	pehe_train: 1.1845	ate_ood: 0.9052,	pehe_ood: 1.1940
+2300	Obj: 0.0655,	F: 0.2887,	Cf: 0.310,	Imb: 3.7e-17,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8694,	pehe_train: 1.1377	ate_ood: 0.8694,	pehe_ood: 1.1468
+2400	Obj: 0.0651,	F: 0.2886,	Cf: 0.309,	Imb: 3.7e-17,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8673,	pehe_train: 1.1349	ate_ood: 0.8673,	pehe_ood: 1.1440
+2500	Obj: 0.0658,	F: 0.2909,	Cf: 0.313,	Imb: 3.7e-17,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.9223,	pehe_train: 1.2069	ate_ood: 0.9223,	pehe_ood: 1.2165
+2600	Obj: 0.0645,	F: 0.2888,	Cf: 0.311,	Imb: 3.7e-17,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8956,	pehe_train: 1.1720	ate_ood: 0.8956,	pehe_ood: 1.1814
+2700	Obj: 0.0644,	F: 0.2895,	Cf: 0.308,	Imb: 3.7e-17,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8449,	pehe_train: 1.1056	ate_ood: 0.8449,	pehe_ood: 1.1145
+2800	Obj: 0.0638,	F: 0.2889,	Cf: 0.310,	Imb: 3.7e-17,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8909,	pehe_train: 1.1658	ate_ood: 0.8909,	pehe_ood: 1.1752
+2900	Obj: 0.0635,	F: 0.2888,	Cf: 0.309,	Imb: 3.7e-17,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8636,	pehe_train: 1.1301	ate_ood: 0.8636,	pehe_ood: 1.1391
+3000	Obj: 0.0631,	F: 0.2886,	Cf: 0.310,	Imb: 3.7e-17,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8738,	pehe_train: 1.1435	ate_ood: 0.8738,	pehe_ood: 1.1527
+3100	Obj: 0.0628,	F: 0.2887,	Cf: 0.311,	Imb: 3.7e-17,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8759,	pehe_train: 1.1461	ate_ood: 0.8759,	pehe_ood: 1.1553
+3200	Obj: 0.0626,	F: 0.2888,	Cf: 0.305,	Imb: 3.7e-17,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8523,	pehe_train: 1.1153	ate_ood: 0.8523,	pehe_ood: 1.1242
+3300	Obj: 0.0624,	F: 0.2889,	Cf: 0.309,	Imb: 3.7e-17,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8889,	pehe_train: 1.1633	ate_ood: 0.8889,	pehe_ood: 1.1726
+3400	Obj: 0.0620,	F: 0.2885,	Cf: 0.310,	Imb: 3.6e-17,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8772,	pehe_train: 1.1479	ate_ood: 0.8772,	pehe_ood: 1.1571
+3500	Obj: 0.0618,	F: 0.2886,	Cf: 0.311,	Imb: 3.6e-17,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8845,	pehe_train: 1.1575	ate_ood: 0.8845,	pehe_ood: 1.1667
+3600	Obj: 0.0617,	F: 0.2888,	Cf: 0.310,	Imb: 3.6e-17,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8915,	pehe_train: 1.1667	ate_ood: 0.8915,	pehe_ood: 1.1760
+3700	Obj: 0.0614,	F: 0.2885,	Cf: 0.309,	Imb: 3.6e-17,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8743,	pehe_train: 1.1441	ate_ood: 0.8743,	pehe_ood: 1.1532
+3800	Obj: 0.0612,	F: 0.2886,	Cf: 0.312,	Imb: 3.6e-17,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8907,	pehe_train: 1.1656	ate_ood: 0.8907,	pehe_ood: 1.1749
+3900	Obj: 0.0613,	F: 0.2892,	Cf: 0.311,	Imb: 3.6e-17,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8602,	pehe_train: 1.1256	ate_ood: 0.8602,	pehe_ood: 1.1346
+4000	Obj: 0.0614,	F: 0.2898,	Cf: 0.306,	Imb: 3.6e-17,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8348,	pehe_train: 1.0924	ate_ood: 0.8348,	pehe_ood: 1.1012
+4100	Obj: 0.0608,	F: 0.2889,	Cf: 0.311,	Imb: 3.6e-17,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8668,	pehe_train: 1.1344	ate_ood: 0.8668,	pehe_ood: 1.1434
+4200	Obj: 0.0605,	F: 0.2885,	Cf: 0.310,	Imb: 3.6e-17,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8774,	pehe_train: 1.1482	ate_ood: 0.8774,	pehe_ood: 1.1574
+4300	Obj: 0.0604,	F: 0.2886,	Cf: 0.310,	Imb: 3.6e-17,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8716,	pehe_train: 1.1406	ate_ood: 0.8716,	pehe_ood: 1.1497
+4400	Obj: 0.0604,	F: 0.2890,	Cf: 0.305,	Imb: 3.6e-17,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8468,	pehe_train: 1.1081	ate_ood: 0.8468,	pehe_ood: 1.1170
+4500	Obj: 0.0601,	F: 0.2886,	Cf: 0.308,	Imb: 3.6e-17,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8660,	pehe_train: 1.1332	ate_ood: 0.8660,	pehe_ood: 1.1423
+4600	Obj: 0.0600,	F: 0.2886,	Cf: 0.308,	Imb: 3.6e-17,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8691,	pehe_train: 1.1373	ate_ood: 0.8691,	pehe_ood: 1.1464
+4700	Obj: 0.0598,	F: 0.2885,	Cf: 0.310,	Imb: 3.6e-17,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8767,	pehe_train: 1.1473	ate_ood: 0.8767,	pehe_ood: 1.1565
+4800	Obj: 0.0598,	F: 0.2886,	Cf: 0.309,	Imb: 3.6e-17,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8829,	pehe_train: 1.1554	ate_ood: 0.8829,	pehe_ood: 1.1646
+4900	Obj: 0.0596,	F: 0.2886,	Cf: 0.310,	Imb: 3.6e-17,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8834,	pehe_train: 1.1560	ate_ood: 0.8834,	pehe_ood: 1.1653
+4999	Obj: 0.0595,	F: 0.2886,	Cf: 0.308,	Imb: 3.5e-17,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8701,	pehe_train: 1.1386	ate_ood: 0.8701,	pehe_ood: 1.1477
+Saving result to ./results//results_20240109_155353-077400/...
+
+Training on experiment 2/10...
+0	Obj: 0.5177,	F: 0.7183,	Cf: 0.615,	Imb: 2.4e-08,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.0103,	pehe_train: 0.0134	ate_ood: 0.0103,	pehe_ood: 0.0133
+100	Obj: 0.0822,	F: 0.2882,	Cf: 0.311,	Imb: 3.3e-16,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8899,	pehe_train: 1.1589	ate_ood: 0.8899,	pehe_ood: 1.1548
+200	Obj: 0.0812,	F: 0.2889,	Cf: 0.303,	Imb: 3.1e-16,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8400,	pehe_train: 1.0939	ate_ood: 0.8400,	pehe_ood: 1.0900
+300	Obj: 0.0796,	F: 0.2882,	Cf: 0.309,	Imb: 3e-16,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8849,	pehe_train: 1.1524	ate_ood: 0.8849,	pehe_ood: 1.1483
+400	Obj: 0.0791,	F: 0.2895,	Cf: 0.307,	Imb: 2.9e-16,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8421,	pehe_train: 1.0967	ate_ood: 0.8421,	pehe_ood: 1.0928
+500	Obj: 0.0774,	F: 0.2882,	Cf: 0.309,	Imb: 2.8e-16,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8800,	pehe_train: 1.1461	ate_ood: 0.8800,	pehe_ood: 1.1420
+600	Obj: 0.0764,	F: 0.2882,	Cf: 0.309,	Imb: 2.7e-16,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8819,	pehe_train: 1.1486	ate_ood: 0.8819,	pehe_ood: 1.1445
+700	Obj: 0.0762,	F: 0.2896,	Cf: 0.314,	Imb: 2.7e-16,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8634,	pehe_train: 1.1244	ate_ood: 0.8634,	pehe_ood: 1.1204
+800	Obj: 0.0746,	F: 0.2883,	Cf: 0.310,	Imb: 2.7e-16,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8744,	pehe_train: 1.1388	ate_ood: 0.8744,	pehe_ood: 1.1348
+900	Obj: 0.0751,	F: 0.2909,	Cf: 0.320,	Imb: 2.6e-16,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.9476,	pehe_train: 1.2340	ate_ood: 0.9476,	pehe_ood: 1.2296
+1000	Obj: 0.0740,	F: 0.2905,	Cf: 0.312,	Imb: 2.5e-16,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.9209,	pehe_train: 1.1994	ate_ood: 0.9209,	pehe_ood: 1.1951
+1100	Obj: 0.0721,	F: 0.2882,	Cf: 0.307,	Imb: 2.4e-16,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8748,	pehe_train: 1.1392	ate_ood: 0.8748,	pehe_ood: 1.1352
+1200	Obj: 0.0714,	F: 0.2882,	Cf: 0.311,	Imb: 2.4e-16,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8921,	pehe_train: 1.1619	ate_ood: 0.8921,	pehe_ood: 1.1577
+1300	Obj: 0.0710,	F: 0.2889,	Cf: 0.305,	Imb: 2.4e-16,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8826,	pehe_train: 1.1494	ate_ood: 0.8826,	pehe_ood: 1.1453
+1400	Obj: 0.0701,	F: 0.2885,	Cf: 0.302,	Imb: 2.3e-16,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8569,	pehe_train: 1.1159	ate_ood: 0.8569,	pehe_ood: 1.1120
+1500	Obj: 0.0695,	F: 0.2886,	Cf: 0.313,	Imb: 2.3e-16,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.9062,	pehe_train: 1.1801	ate_ood: 0.9062,	pehe_ood: 1.1759
+1600	Obj: 0.0691,	F: 0.2890,	Cf: 0.306,	Imb: 2.3e-16,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8445,	pehe_train: 1.0998	ate_ood: 0.8445,	pehe_ood: 1.0959
+1700	Obj: 0.0701,	F: 0.2922,	Cf: 0.305,	Imb: 2.2e-16,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8062,	pehe_train: 1.0500	ate_ood: 0.8062,	pehe_ood: 1.0463
+1800	Obj: 0.0676,	F: 0.2882,	Cf: 0.310,	Imb: 2.2e-16,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8757,	pehe_train: 1.1404	ate_ood: 0.8757,	pehe_ood: 1.1364
+1900	Obj: 0.0672,	F: 0.2883,	Cf: 0.314,	Imb: 2.2e-16,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.9006,	pehe_train: 1.1728	ate_ood: 0.9006,	pehe_ood: 1.1687
+2000	Obj: 0.0667,	F: 0.2882,	Cf: 0.311,	Imb: 2.2e-16,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8909,	pehe_train: 1.1602	ate_ood: 0.8909,	pehe_ood: 1.1561
+2100	Obj: 0.0662,	F: 0.2882,	Cf: 0.308,	Imb: 2.2e-16,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8692,	pehe_train: 1.1320	ate_ood: 0.8692,	pehe_ood: 1.1280
+2200	Obj: 0.0658,	F: 0.2882,	Cf: 0.308,	Imb: 2.1e-16,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8698,	pehe_train: 1.1328	ate_ood: 0.8698,	pehe_ood: 1.1288
+2300	Obj: 0.0655,	F: 0.2886,	Cf: 0.315,	Imb: 2.1e-16,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8846,	pehe_train: 1.1520	ate_ood: 0.8846,	pehe_ood: 1.1479
+2400	Obj: 0.0662,	F: 0.2909,	Cf: 0.318,	Imb: 2e-16,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.9409,	pehe_train: 1.2253	ate_ood: 0.9409,	pehe_ood: 1.2209
+2500	Obj: 0.0646,	F: 0.2883,	Cf: 0.309,	Imb: 2e-16,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8872,	pehe_train: 1.1554	ate_ood: 0.8872,	pehe_ood: 1.1513
+2600	Obj: 0.0642,	F: 0.2882,	Cf: 0.311,	Imb: 2e-16,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8821,	pehe_train: 1.1488	ate_ood: 0.8821,	pehe_ood: 1.1447
+2700	Obj: 0.0638,	F: 0.2882,	Cf: 0.307,	Imb: 2e-16,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8683,	pehe_train: 1.1308	ate_ood: 0.8683,	pehe_ood: 1.1268
+2800	Obj: 0.0635,	F: 0.2882,	Cf: 0.312,	Imb: 2e-16,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8889,	pehe_train: 1.1577	ate_ood: 0.8889,	pehe_ood: 1.1536
+2900	Obj: 0.0633,	F: 0.2884,	Cf: 0.309,	Imb: 1.9e-16,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8672,	pehe_train: 1.1294	ate_ood: 0.8672,	pehe_ood: 1.1254
+3000	Obj: 0.0629,	F: 0.2881,	Cf: 0.309,	Imb: 1.9e-16,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8803,	pehe_train: 1.1465	ate_ood: 0.8803,	pehe_ood: 1.1424
+3100	Obj: 0.0626,	F: 0.2882,	Cf: 0.309,	Imb: 1.9e-16,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8750,	pehe_train: 1.1395	ate_ood: 0.8750,	pehe_ood: 1.1355
+3200	Obj: 0.0624,	F: 0.2883,	Cf: 0.312,	Imb: 1.9e-16,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8809,	pehe_train: 1.1471	ate_ood: 0.8809,	pehe_ood: 1.1431
+3300	Obj: 0.0622,	F: 0.2883,	Cf: 0.306,	Imb: 1.9e-16,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8598,	pehe_train: 1.1198	ate_ood: 0.8598,	pehe_ood: 1.1158
+3400	Obj: 0.0619,	F: 0.2882,	Cf: 0.311,	Imb: 1.9e-16,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8898,	pehe_train: 1.1587	ate_ood: 0.8898,	pehe_ood: 1.1546
+3500	Obj: 0.0618,	F: 0.2884,	Cf: 0.308,	Imb: 1.9e-16,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8887,	pehe_train: 1.1574	ate_ood: 0.8887,	pehe_ood: 1.1533
+3600	Obj: 0.0617,	F: 0.2887,	Cf: 0.306,	Imb: 1.8e-16,	Val: nan,	ValImb: nan,	ValObj: nan	ate_train: 0.8504,	pehe_train: 1.1075	ate_ood: 0.8504,	pehe_ood: 1.1035

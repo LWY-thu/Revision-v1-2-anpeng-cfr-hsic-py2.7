@@ -1,0 +1,38 @@
+Training with hyperparameters: alpha=0.05, lambda=0.0001
+Training data: ./Syn_8_8_8_2_10000/syn_biny/rp30.train.npz
+Test data:     ./Syn_8_8_8_2_10000/syn_biny/rn30.test.npz
+Loaded data with shape [9000,26]
+Defining graph...
+
+Training on experiment 1/10...
+0	Obj: 0.6974,	F: 0.6931,	Cf: 0.693,	Imb: 0.0072,	Val: 0.693,	ValImb: 0.0074,	ValObj: 0.70	ate_train: 0.0000,	pehe_train: 0.0000	ate_ood: 0.0000,	pehe_ood: 0.0000,	Acc: 55.86%,	cAcc: 48.05%
+100	Obj: 0.7417,	F: 0.4414,	Cf: 0.400,	Imb: 36,	Val: 0.455,	ValImb: 35,	ValObj: 0.75	ate_train: 0.0127,	pehe_train: 0.5696	ate_ood: 0.0125,	pehe_ood: 0.5646,	Acc: 70.31%,	cAcc: 76.17%
+200	Obj: 0.5007,	F: 0.2071,	Cf: 0.278,	Imb: 34,	Val: 0.221,	ValImb: 33,	ValObj: 0.51	ate_train: -0.0433,	pehe_train: 0.6343	ate_ood: -0.0139,	pehe_ood: 0.5748,	Acc: 97.27%,	cAcc: 82.42%
+300	Obj: 0.4309,	F: 0.1588,	Cf: 0.197,	Imb: 30,	Val: 0.177,	ValImb: 28,	ValObj: 0.44	ate_train: -0.0138,	pehe_train: 0.7527	ate_ood: 0.0366,	pehe_ood: 0.6992,	Acc: 96.88%,	cAcc: 88.28%
+400	Obj: 0.3933,	F: 0.1418,	Cf: 0.173,	Imb: 25,	Val: 0.169,	ValImb: 23,	ValObj: 0.41	ate_train: -0.0194,	pehe_train: 0.7270	ate_ood: 0.0044,	pehe_ood: 0.6156,	Acc: 98.83%,	cAcc: 91.80%
+500	Obj: 0.3689,	F: 0.1288,	Cf: 0.163,	Imb: 23,	Val: 0.154,	ValImb: 21,	ValObj: 0.38	ate_train: -0.0020,	pehe_train: 0.7838	ate_ood: 0.0381,	pehe_ood: 0.6986,	Acc: 98.44%,	cAcc: 92.97%
+600	Obj: 0.3708,	F: 0.1141,	Cf: 0.154,	Imb: 26,	Val: 0.141,	ValImb: 24,	ValObj: 0.39	ate_train: 0.0006,	pehe_train: 0.7816	ate_ood: 0.0341,	pehe_ood: 0.6624,	Acc: 96.88%,	cAcc: 92.58%
+700	Obj: 0.3456,	F: 0.1080,	Cf: 0.164,	Imb: 22,	Val: 0.146,	ValImb: 21,	ValObj: 0.37	ate_train: -0.0026,	pehe_train: 0.8004	ate_ood: 0.0272,	pehe_ood: 0.6889,	Acc: 97.66%,	cAcc: 90.62%
+800	Obj: 0.3469,	F: 0.0951,	Cf: 0.158,	Imb: 25,	Val: 0.143,	ValImb: 23,	ValObj: 0.38	ate_train: 0.0118,	pehe_train: 0.8047	ate_ood: 0.0366,	pehe_ood: 0.6767,	Acc: 96.88%,	cAcc: 90.62%
+900	Obj: 0.3201,	F: 0.0961,	Cf: 0.168,	Imb: 20,	Val: 0.145,	ValImb: 18,	ValObj: 0.36	ate_train: -0.0090,	pehe_train: 0.8048	ate_ood: 0.0204,	pehe_ood: 0.6623,	Acc: 97.27%,	cAcc: 94.53%
+1000	Obj: 0.3506,	F: 0.0907,	Cf: 0.183,	Imb: 27,	Val: 0.159,	ValImb: 25,	ValObj: 0.41	ate_train: 0.0183,	pehe_train: 0.8070	ate_ood: 0.0351,	pehe_ood: 0.6656,	Acc: 96.48%,	cAcc: 93.36%
+1100	Obj: 0.3177,	F: 0.0813,	Cf: 0.180,	Imb: 22,	Val: 0.145,	ValImb: 21,	ValObj: 0.37	ate_train: -0.0001,	pehe_train: 0.8145	ate_ood: 0.0157,	pehe_ood: 0.6806,	Acc: 98.44%,	cAcc: 91.41%
+1200	Obj: 0.3389,	F: 0.0744,	Cf: 0.181,	Imb: 28,	Val: 0.148,	ValImb: 26,	ValObj: 0.40	ate_train: 0.0109,	pehe_train: 0.8150	ate_ood: 0.0302,	pehe_ood: 0.6765,	Acc: 99.22%,	cAcc: 91.41%
+1300	Obj: 0.3155,	F: 0.0665,	Cf: 0.186,	Imb: 25,	Val: 0.139,	ValImb: 23,	ValObj: 0.38	ate_train: 0.0023,	pehe_train: 0.8479	ate_ood: 0.0200,	pehe_ood: 0.6846,	Acc: 100.00%,	cAcc: 94.53%
+1400	Obj: 0.3229,	F: 0.0610,	Cf: 0.194,	Imb: 27,	Val: 0.139,	ValImb: 25,	ValObj: 0.39	ate_train: 0.0053,	pehe_train: 0.8387	ate_ood: 0.0237,	pehe_ood: 0.7107,	Acc: 99.22%,	cAcc: 91.80%
+1500	Obj: 0.3146,	F: 0.0557,	Cf: 0.203,	Imb: 27,	Val: 0.148,	ValImb: 24,	ValObj: 0.40	ate_train: -0.0002,	pehe_train: 0.8315	ate_ood: 0.0197,	pehe_ood: 0.6389,	Acc: 100.00%,	cAcc: 91.41%
+1600	Obj: 0.3032,	F: 0.0564,	Cf: 0.203,	Imb: 24,	Val: 0.136,	ValImb: 23,	ValObj: 0.38	ate_train: -0.0013,	pehe_train: 0.8556	ate_ood: 0.0140,	pehe_ood: 0.6726,	Acc: 98.83%,	cAcc: 89.84%
+1700	Obj: 0.2980,	F: 0.0491,	Cf: 0.203,	Imb: 25,	Val: 0.137,	ValImb: 23,	ValObj: 0.38	ate_train: -0.0014,	pehe_train: 0.8232	ate_ood: 0.0044,	pehe_ood: 0.6390,	Acc: 99.22%,	cAcc: 89.45%
+1800	Obj: 0.3003,	F: 0.0469,	Cf: 0.204,	Imb: 25,	Val: 0.152,	ValImb: 24,	ValObj: 0.40	ate_train: -0.0040,	pehe_train: 0.8258	ate_ood: 0.0023,	pehe_ood: 0.6431,	Acc: 100.00%,	cAcc: 91.41%
+1900	Obj: 0.2951,	F: 0.0501,	Cf: 0.229,	Imb: 24,	Val: 0.161,	ValImb: 22,	ValObj: 0.40	ate_train: 0.0051,	pehe_train: 0.8786	ate_ood: 0.0276,	pehe_ood: 0.6794,	Acc: 99.22%,	cAcc: 94.53%
+2000	Obj: 0.2842,	F: 0.0352,	Cf: 0.210,	Imb: 25,	Val: 0.144,	ValImb: 23,	ValObj: 0.38	ate_train: 0.0068,	pehe_train: 0.8521	ate_ood: 0.0344,	pehe_ood: 0.6581,	Acc: 99.61%,	cAcc: 92.19%
+2100	Obj: 0.2846,	F: 0.0366,	Cf: 0.237,	Imb: 24,	Val: 0.139,	ValImb: 23,	ValObj: 0.38	ate_train: 0.0042,	pehe_train: 0.8732	ate_ood: 0.0284,	pehe_ood: 0.6816,	Acc: 98.83%,	cAcc: 92.58%
+2200	Obj: 0.2803,	F: 0.0341,	Cf: 0.227,	Imb: 24,	Val: 0.159,	ValImb: 22,	ValObj: 0.39	ate_train: 0.0040,	pehe_train: 0.8509	ate_ood: 0.0247,	pehe_ood: 0.6430,	Acc: 99.61%,	cAcc: 93.75%
+2300	Obj: 0.2868,	F: 0.0294,	Cf: 0.230,	Imb: 26,	Val: 0.158,	ValImb: 24,	ValObj: 0.41	ate_train: 0.0058,	pehe_train: 0.8559	ate_ood: 0.0250,	pehe_ood: 0.6438,	Acc: 100.00%,	cAcc: 93.36%
+2400	Obj: 0.2745,	F: 0.0267,	Cf: 0.238,	Imb: 24,	Val: 0.161,	ValImb: 23,	ValObj: 0.40	ate_train: 0.0035,	pehe_train: 0.8611	ate_ood: 0.0259,	pehe_ood: 0.6727,	Acc: 98.83%,	cAcc: 92.97%
+2500	Obj: 0.2747,	F: 0.0213,	Cf: 0.259,	Imb: 25,	Val: 0.159,	ValImb: 24,	ValObj: 0.40	ate_train: 0.0011,	pehe_train: 0.8528	ate_ood: 0.0200,	pehe_ood: 0.6428,	Acc: 99.61%,	cAcc: 92.97%
+2600	Obj: 0.2718,	F: 0.0224,	Cf: 0.255,	Imb: 25,	Val: 0.162,	ValImb: 23,	ValObj: 0.40	ate_train: 0.0021,	pehe_train: 0.8639	ate_ood: 0.0176,	pehe_ood: 0.6419,	Acc: 99.61%,	cAcc: 89.06%
+2700	Obj: 0.2671,	F: 0.0203,	Cf: 0.258,	Imb: 24,	Val: 0.165,	ValImb: 22,	ValObj: 0.40	ate_train: 0.0016,	pehe_train: 0.8539	ate_ood: 0.0156,	pehe_ood: 0.6085,	Acc: 99.22%,	cAcc: 92.97%
+2800	Obj: 0.2770,	F: 0.0247,	Cf: 0.263,	Imb: 25,	Val: 0.181,	ValImb: 23,	ValObj: 0.42	ate_train: 0.0048,	pehe_train: 0.8559	ate_ood: 0.0202,	pehe_ood: 0.6107,	Acc: 99.61%,	cAcc: 94.14%
+2900	Obj: 0.2702,	F: 0.0168,	Cf: 0.264,	Imb: 25,	Val: 0.175,	ValImb: 24,	ValObj: 0.42	ate_train: 0.0013,	pehe_train: 0.8598	ate_ood: 0.0113,	pehe_ood: 0.6161,	Acc: 99.61%,	cAcc: 91.80%
+3000	Obj: 0.2616,	F: 0.0158,	Cf: 0.286,	Imb: 24,	Val: 0.168,	ValImb: 22,	ValObj: 0.40	ate_train: 0.0099,	pehe_train: 0.8853	ate_ood: 0.0261,	pehe_ood: 0.6391,	Acc: 99.22%,	cAcc: 89.06%
