@@ -1,0 +1,49 @@
+Traceback (most recent call last):
+  File "/home/wyliu/yes/envs/tf-torch/lib/python3.6/site-packages/tensorflow_core/python/framework/ops.py", line 1607, in _create_c_op
+    c_op = c_api.TF_FinishOperation(op_desc)
+tensorflow.python.framework.errors_impl.InvalidArgumentError: Dimension 1 in both shapes must be equal, but are 100 and 1. Shapes are [?,100] and [?,1].
+	From merging shape 0 with other shapes. for 'output/concat/concat_dim' (op: 'Pack') with input shapes: [?,100], [?,1].
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "net_train.py", line 494, in main
+    run(outdir)
+  File "net_train.py", line 333, in run
+    CFR = cfr.cfr_net(x, t, y_, p, FLAGS, r_alpha, r_lambda, do_in, do_out, dims, I, nn)
+  File "/home/wyliu/code/Revision-v1-2-anpeng-cfr-hsic-py2.7/net.py", line 30, in __init__
+    self._build_graph(x, t, y_ , p_t, FLAGS, r_alpha, r_lambda, do_in, do_out, dims, I)
+  File "/home/wyliu/code/Revision-v1-2-anpeng-cfr-hsic-py2.7/net.py", line 113, in _build_graph
+    y, weights_out, weights_pred, biases_out, bias_pred = self._build_output_graph(h_rep_norm, t, dim_in, dim_out, do_out, FLAGS)
+  File "/home/wyliu/code/Revision-v1-2-anpeng-cfr-hsic-py2.7/net.py", line 332, in _build_output_graph
+    h_input = tf.concat(1,[rep, t])
+  File "/home/wyliu/yes/envs/tf-torch/lib/python3.6/site-packages/tensorflow_core/python/util/dispatch.py", line 180, in wrapper
+    return target(*args, **kwargs)
+  File "/home/wyliu/yes/envs/tf-torch/lib/python3.6/site-packages/tensorflow_core/python/ops/array_ops.py", line 1418, in concat
+    dtype=dtypes.int32).get_shape().assert_has_rank(0)
+  File "/home/wyliu/yes/envs/tf-torch/lib/python3.6/site-packages/tensorflow_core/python/framework/ops.py", line 1184, in convert_to_tensor
+    return convert_to_tensor_v2(value, dtype, preferred_dtype, name)
+  File "/home/wyliu/yes/envs/tf-torch/lib/python3.6/site-packages/tensorflow_core/python/framework/ops.py", line 1242, in convert_to_tensor_v2
+    as_ref=False)
+  File "/home/wyliu/yes/envs/tf-torch/lib/python3.6/site-packages/tensorflow_core/python/framework/ops.py", line 1297, in internal_convert_to_tensor
+    ret = conversion_func(value, dtype=dtype, name=name, as_ref=as_ref)
+  File "/home/wyliu/yes/envs/tf-torch/lib/python3.6/site-packages/tensorflow_core/python/ops/array_ops.py", line 1267, in _autopacking_conversion_function
+    return _autopacking_helper(v, dtype, name or "packed")
+  File "/home/wyliu/yes/envs/tf-torch/lib/python3.6/site-packages/tensorflow_core/python/ops/array_ops.py", line 1203, in _autopacking_helper
+    return gen_array_ops.pack(elems_as_tensors, name=scope)
+  File "/home/wyliu/yes/envs/tf-torch/lib/python3.6/site-packages/tensorflow_core/python/ops/gen_array_ops.py", line 6303, in pack
+    "Pack", values=values, axis=axis, name=name)
+  File "/home/wyliu/yes/envs/tf-torch/lib/python3.6/site-packages/tensorflow_core/python/framework/op_def_library.py", line 794, in _apply_op_helper
+    op_def=op_def)
+  File "/home/wyliu/yes/envs/tf-torch/lib/python3.6/site-packages/tensorflow_core/python/util/deprecation.py", line 507, in new_func
+    return func(*args, **kwargs)
+  File "/home/wyliu/yes/envs/tf-torch/lib/python3.6/site-packages/tensorflow_core/python/framework/ops.py", line 3357, in create_op
+    attrs, op_def, compute_device)
+  File "/home/wyliu/yes/envs/tf-torch/lib/python3.6/site-packages/tensorflow_core/python/framework/ops.py", line 3426, in _create_op_internal
+    op_def=op_def)
+  File "/home/wyliu/yes/envs/tf-torch/lib/python3.6/site-packages/tensorflow_core/python/framework/ops.py", line 1770, in __init__
+    control_input_ops)
+  File "/home/wyliu/yes/envs/tf-torch/lib/python3.6/site-packages/tensorflow_core/python/framework/ops.py", line 1610, in _create_c_op
+    raise ValueError(str(e))
+ValueError: Dimension 1 in both shapes must be equal, but are 100 and 1. Shapes are [?,100] and [?,1].
+	From merging shape 0 with other shapes. for 'output/concat/concat_dim' (op: 'Pack') with input shapes: [?,100], [?,1].
